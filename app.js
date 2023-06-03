@@ -23,8 +23,8 @@ app.use(otpRoutes);
 
 
 sequelize
-//.sync()
-.sync({force: true})
+.sync()
+//.sync({force: true})
 .then(result=>{
    app.listen(3000);
 })
